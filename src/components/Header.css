@@ -1,0 +1,25 @@
+header {
+    background-color: white;
+    height: 111px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Best box shadow colour & numbers recomended by Gemni. */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    /* box shadow numbers by teacher */  
+    /* box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06); */
+}
+
+header img {
+    width: 43px;
+    height: 52px;
+}
+
+header p {
+    font-size: 32px;
+    color: #141413;
+    margin-left: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: -5%;
+}
