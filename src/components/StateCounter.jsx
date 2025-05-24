@@ -9,11 +9,14 @@ export default function StateCounter() {
     let [count, setCount] = useState(0);
 
     function handleIncrement() {
-        setCount(count + 1);
+        // setCount(count + 1);   It works, but it's not the recommended way.
+        // Don't manually increment the count variable by calling something like ++count, use setCount to update the state to a new value.
+        // Think of it like a new value that replaces the old one.
+        setCount(prevCount => prevCount + 1);
     }
 
     function handleDecrement() {
-        setCount(count - 1);
+        setCount(prevCount => prevCount - 1)
     }
 
     return (
