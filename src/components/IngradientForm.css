@@ -1,0 +1,35 @@
+
+.ingradient-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin: 65px 65px 0 65px;
+}
+
+.ingradient-form > input {
+    flex-grow: 1;
+    min-width: 200px;
+    max-width: 400px;
+    padding: 9px 13px;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: #D1D5DB;
+}
+
+.ingradient-form > button {
+    width: 150px;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    padding: 9px 17px;
+}
+
+.ingradient-form > button:hover {
+    background-color: #0056b3;
+}
+
+.ingradient-form > button::before {
+    content: "+ ";
+}
