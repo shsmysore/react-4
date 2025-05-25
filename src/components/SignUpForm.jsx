@@ -2,11 +2,38 @@ import './SignUpForm.css';
 
 
 export default function SignUpForm() {
+
+    function handleSignUp(formData) {
+        const email = formData.get('email');
+        const password = formData.get('password');
+        const description = formData.get('description');
+        const employmentStatus = formData.get('employmentStatus');
+        const skills = formData.getAll('skills'); // Use getAll to get all selected checkboxes
+        const favColor = formData.get('favColor');
+
+        console.log(`Email: ${email}`);
+        console.log(`Password: ${password}`);
+        console.log(`Description: ${description}`);
+        console.log(`Employment Status: ${employmentStatus}`);
+        console.log(`Skills: ${skills.join(', ')}`); // Join array to display as string
+        console.log(`Favorite Color: ${favColor}`);
+
+        // Alternatively, for data maybe read into an object directly:
+        const allData = Object.fromEntries(formData.entries());
+        console.log('All form data (Checkbox items missing):', allData);
+        const checkBoxSkills = formData.getAll('skills');
+        const formItems = {
+            ...allData,
+            skills: checkBoxSkills
+        }
+        console.log('All form data (Checkbox items included):', formItems);
+    }
+
     return (
         <div className="sign-up-form-container">
             <section className="sign-up-section">
                 <h1>Sign up form</h1>
-                <form className="sign-up-form">
+                <form action={handleSignUp} className="sign-up-form">
                     <label htmlFor="email">Email id: </label>
                     <input id="email" name="email" type="email" placeholder='abc@example.com' />
 
