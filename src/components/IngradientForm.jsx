@@ -39,7 +39,7 @@ export default function IngradientForm() {
             </form>
 
             <section className='view-ingradients'>
-                <h2>Ingraditents on hand:</h2>
+                <h2>Ingredients on hand:</h2>
                 <ul>
                     {ingradientsLiList}
                 </ul>

@@ -1,0 +1,121 @@
+
+.sign-up-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.sign-up-section {
+    display: inline-flex;  /* Conatiner width will be equal to the width of its children */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    width: 1;
+    padding: 10px 25px;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+/* Mention the type so that it doesn't apply to all input types unknowingly. */
+.sign-up-form input[type="email"], input[type="password"] {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 1rem;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+textarea {
+    margin-bottom: 20px;
+}
+
+.employment-status-fieldset {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* <<<<<<<<<-------------------------  from Gemni (Radio button style) ---------------------->>>>>>>>>>>>>>> */
+.radio-option {
+    display: flex;
+    align-items: center; /* Aligns the radio button and label vertically */
+    justify-content: start; 
+}
+
+input[type="radio"] {
+    /* Reset default appearance */
+    appearance: none; /* Removes default radio button styling */
+    -webkit-appearance: none; /* Removes default radio button styling in WebKit browsers */
+    -moz-appearance: none; /* Removes default radio button styling in Firefox */
+
+
+    /* Define the size of your custom bubble */
+    width: 15px;
+    height: 15px;
+
+    border: 2px solid #555; /* Border of the bubble */
+    border-radius: 50%; /* Makes it round */
+    background-color: #fff; /* White background for the bubble */
+
+    /* **CRITICAL FOR SPACING:** */
+    margin: 0; /* Remove any default or inherited margins */
+    padding: 0; /* Remove any internal padding within the bubble */
+    flex-shrink: 0; /* Prevents the radio bubble from shrinking if space is tight */
+
+    cursor: pointer; /* hand type UI when hovering over the radio button */
+    /* position: relative; For the custom checked indicator required ??? */
+    outline: none; /* Remove focus outline, but consider :focus-visible for accessibility */
+    transition: all 0.2s ease-in-out;
+}
+
+/* STYLES WHEN CHECKED */
+input[type="radio"]:checked {
+    border-color: rgb(0, 0, 0);
+    background-color: red; 
+}
+
+/* <<<<<<<<<-------------------------  from Gemni (Radio button style)  ---------------------->>>>>>>>>>>>>>> */
+
+.radio-label {
+    margin-left: 10px;
+}
+
+.skills-checklist-fieldset {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+}
+
+.checkbox-label {
+    margin-left: 5px;
+}
+
+.form-check-input:checked {
+    background-color: #ff573f;
+    border-color: #050100;
+}
+
+.color-select {
+    margin-bottom: 20px;  
+}
+
+.sign-up-submit {
+    margin-bottom: 20px;
+    background-color: #e90a7a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
