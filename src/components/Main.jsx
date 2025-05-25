@@ -5,8 +5,7 @@ import StateCounter from './StateCounter';
 export default function Main() {
     return (
         <main>
-           <IngradientForm />  
-           <StateCounter />   
+           <IngradientForm /> 
         </main>
     )
 }
