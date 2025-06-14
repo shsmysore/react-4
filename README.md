@@ -20,3 +20,22 @@ If imported globally it tries to style every other component. (probably selectin
 ToDo: Figure out a way to locally import Bootstrap in a component level.
 
 Next steps: Try to read inputs from Signup form, continue the course.
+
+4. useState in React
+Its a React hook for managin states within funcational components. 
+This helps components manage their own data and automatically re-render the components when state changes.
+- Use the set function only to set a new value. Not modify the old ref and pass it in.
+
+5. Conditional rendering
+Examples:
+(a) this is also possible, not preffered.
+```
+{isLoggedIn && <p>These are the secret details!</p>}
+```
+(b) a ternaery or a function is preffered way.
+```
+{isLoggedIn ? <p>These are the secret details!</p> : null}
+```
+
+6. Pass a state argument into a separate component.
+Side track, counter project.

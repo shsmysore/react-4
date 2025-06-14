@@ -1,4 +1,5 @@
 import "./StateCounter.css";
+import Count from "./Count.jsx";
 import { useState } from "react";
 
 export default function StateCounter() {
@@ -26,7 +27,8 @@ export default function StateCounter() {
             </div>
             <div className="counter-interaction">
                 <button className="counter-button minus-button" onClick={handleDecrement}>-</button>
-                <span className="counter-value">{count}</span>
+                {/* <span className="counter-value">{count}</span> */}
+                <Count number={count} />
                 <button className="counter-button plus-button" onClick={handleIncrement}>+</button>
             </div>
         </div>
