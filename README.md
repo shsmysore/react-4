@@ -25,6 +25,8 @@ Next steps: Try to read inputs from Signup form, continue the course.
 Its a React hook for managin states within funcational components. 
 This helps components manage their own data and automatically re-render the components when state changes.
 - Use the set function only to set a new value. Not modify the old ref and pass it in.
+- When a component is being re-rendered due to state change, all the nested (child componenets) are also re-rendered. 
+- Learn more on states: Advanced React course on Scrimba.
 
 5. Conditional rendering
 Examples:
@@ -39,3 +41,16 @@ Examples:
 
 6. Pass a state argument into a separate component.
 Side track, counter project.
+
+7. On the component props we can pass any type of JS object, including functions itself.
+A button click handle function maybe at the parent componenet. 
+If the button is in a child componenet, pass the function also as a prop.
+Wire the function prop into the native button's onClick property.
+
+8. Data only flows downwards in components hirarchy. 
+Siblings can't directly share props. Define the data 1 level up, and share in case needed.
+Alternative: Use React's context (Advanced sessions)
+
+9.
+
+
